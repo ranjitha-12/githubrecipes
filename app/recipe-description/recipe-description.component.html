@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container mt-3">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          <a href="#" style="text-decoration: none;"><div class="title navbar-brand center">&nbsp; Test<span style="color: #32B768;">Food</span></div></a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+              <li class="nav-item">
+                <a class="nav-link nav-txt active" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-txt" aria-current="page" href="#">RECIPES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-txt" aria-current="page" href="#">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-txt" aria-current="page" href="#">DOWNLOAD</a>
+              </li>
+            </ul>
+          </div>
+         <div class="d-flex account">
+             <div><img src="assets/images/user.svg" class="user"></div>
+             <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">My Account</button><i class="fa-solid fa-chevron-down"></i>
+                <div id="myDropdown" class="dropdown-content">
+                  <div class="d-flex">
+                      <div>
+                      <label class="greetings">Good Evening</label>
+                      <label class="user-name">Shubham</label>
+                      </div>
+                 <div><img src="assets/images/user.svg" class="mt-2"></div>  
+                  </div>  
+                  <hr style="border: 1px solid #EAF2F9;">
+                  <div class="row">
+                      <div class="col-lg-10 col-md-10 col-sm-10 col-10">
+                        <div class="d-flex">  
+                        <div><img src="assets/images/user-profile.svg" class="icon"></div>    
+                        <a href="#" class="sub-txt">My Profile</a>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                        <i class="fa-solid fa-angle-right mt-3 float-end cursor"></i>
+                      </div>
+                  </div>
+                  <hr style="border: 1px solid #EAF2F9;">
+                  <div class="row">
+                    <div class="col-lg-10 col-md-10 col-sm-10 col-10">
+                      <div class="d-flex">  
+                      <div><img src="assets/images/saved.svg" class="saved-icon"></div>    
+                      <a href="#" class="sub-txt">Saved Items</a>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                      <i class="fa-solid fa-angle-right mt-3 float-end cursor"></i>
+                    </div>
+                </div>
+                <hr style="border: 1px solid #EAF2F9;">
+                <div class="row">
+                    <div class="col-lg-10 col-md-10 col-sm-10 col-10">
+                      <div class="d-flex">  
+                      <div><img src="assets/images/calender.svg" class="icon"></div>    
+                      <a href="#" class="sub-txt">Settings</a>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                      <i class="fa-solid fa-angle-right mt-3 float-end cursor"></i>
+                    </div>
+                </div>
+                <hr style="border: 1px solid #EAF2F9;">
+                <div class="row">
+                    <div class="col-lg-10 col-md-10 col-sm-10 col-10">
+                      <div class="d-flex">  
+                      <div><img src="assets/images/search.svg" class="icon"></div>    
+                      <a href="#" class="sub-txt">Help</a>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                      <i class="fa-solid fa-angle-right mt-3 float-end cursor"></i>
+                    </div>
+                </div>
+                <hr style="border: 1px solid #EAF2F9;">
+                <div class="row">
+                    <div class="col-lg-10 col-md-10 col-sm-10 col-10">
+                      <div class="d-flex">  
+                      <div><img src="assets/images/refer.svg" class="icon"></div>    
+                      <a href="#" class="sub-txt">Refer a Friend</a>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                      <i class="fa-solid fa-angle-right mt-3 float-end cursor"></i>
+                    </div>
+                </div>
+                  <!-- <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a> -->
+                </div>
+              </div>
+         </div>
+        </div>
+      </nav>
+ <div class="container">
+     <div class="row">
+         <div class="col-lg-6 col-md-12 col-sm-12">
+             <div class="recipe-box mt-5" style="position: relative;">
+                 <img src="assets/images/recipe-img.svg" class="w-100">
+                 <div class="d-flex hour-box">
+                    <div>
+                        <img src="assets/images/box-clock.svg" style="margin-top: 20%;margin-left: 30%;">
+                    </div>
+                    <div class="timing mt-2" style="color: black !important;padding-left: 3%;">&nbsp; 1 Hour</div>
+                </div>
+                </div>
+         </div>
+         <div class="col-lg-6 col-md-12 col-sm-12">
+           <div class="recipe-name mt-5">Mushroom, Crispy Onion & Fontina Burgers</div>
+           <div class="recipe-requirement mt-4">with Pear & Arugula Salad</div>
+           <div class="stars mt-3">
+            <img src="assets/images/star.svg" class="star-size">
+            <img src="assets/images/star.svg" class="star-size">
+            <img src="assets/images/star.svg" class="star-size">
+            <img src="assets/images/star.svg" class="star-size">
+            <img src="assets/images/star.svg" class="star-size">
+            <label class="count">(128)</label>
+           </div>
+           <div class="recipe-from mt-4">From the Test Kitchen</div>
+           <div class="recipe-process mt-3">For incredibly rich, savory, flavor, we're serving these prime ground beef patties (covered with melty fontina cheese) with a luxe topping of mushrooms—glazed in the pan with umami soy</div>
+           <button class="description-button mt-3">READ DESCRIPTION</button>
+           <div class="recipe-composition mt-4">
+               <div class="row">
+                   <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                    <div class="description">Ingredients</div>
+                   </div>
+                   <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                   <div class="amount float-end mt-2">15</div>
+                </div>
+               </div>
+               <hr>
+               <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                 <div class="description">Nutrition</div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                <div class="amount float-end mt-2">PER SERVING</div>
+             </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                 <div class="description">Calories</div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                <div class="amount float-end mt-2">1050 Cals (est.)</div>
+             </div>
+            </div>
+           </div>
+        </div>
+     </div>
+ </div>
+ <div class="container mt-5">
+     <hr class="mt-5">
+     <div class="description-heading mt-5">Description</div>
+     <div class="description-para mt-5">A crunchy chocolate cookie crust provides a tasty base to a light and creamy peanut butter filling that's then topped with a velvety chocolate mousse. The sprinkling of crunchy roasted peanuts and shaved chocolate on top makes this a combination of textures and flavors that can't be beat. Plus, it's a fabulous and impressive dessert that is surprisingly easy to make. <span style="color: #32B768;">Uses KitchenAid® Hand Mixer.</span>
+    </div>
+    <div class="description-para mt-4">A crunchy chocolate cookie crust provides a tasty base to a light and creamy peanut butter filling that's then topped with a velvety chocolate mousse. The sprinkling of crunchy roasted peanuts and shaved chocolate on top makes this a combination of textures and flavors that can't be beat. Plus, it's a fabulous and impressive dessert that is surprisingly easy to make. <span style="color: #32B768;">Uses KitchenAid® Hand Mixer.</span>
+    </div>
+ </div>
+ <div class="container mt-5">
+    <div class="description-heading mt-5">Ingredients</div>
+    <div class="row">
+        <div class="col-lg-7 col-md-12 col-sm-12">
+            <img src="assets/images/foods.svg" class="w-100 mt-3">
+        </div>
+        <div class="col-lg-5 col-md-12 col-sm-12">
+            <div class="recipe-composition mt-4">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                     <div class="description-list">Chicken tenders</div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                    <div class="amount-list float-end mt-2">3 pounds</div>
+                 </div>
+                </div>
+                <hr>
+                <div class="row">
+                 <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                  <div class="description-list">Pork rinds</div>
+                 </div>
+                 <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                 <div class="amount-list float-end mt-2">4 ounces</div>
+              </div>
+             </div>
+             <hr>
+             <div class="row">
+                 <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                  <div class="description-list">Thyme</div>
+                 </div>
+                 <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                 <div class="amount-list float-end mt-2">2 teaspoons</div>
+              </div>
+             </div>
+             <hr>
+             <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                 <div class="description-list">Sea salt</div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                <div class="amount-list float-end mt-2">1 teaspoon</div>
+             </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                 <div class="description-list">Chicken tenders</div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                <div class="amount-list float-end mt-2">3 pounds</div>
+             </div>
+            </div>
+            <hr>
+            <div class="row">
+             <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+              <div class="description-list">Pork rinds</div>
+             </div>
+             <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+             <div class="amount-list float-end mt-2">4 ounces</div>
+          </div>
+         </div>
+         <hr>
+         <div class="row">
+             <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+              <div class="description-list">Thyme</div>
+             </div>
+             <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+             <div class="amount-list float-end mt-2">2 teaspoons</div>
+          </div>
+         </div>
+         <hr>
+         <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+             <div class="description-list">Sea salt</div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+            <div class="amount-list float-end mt-2">1 teaspoon</div>
+         </div>
+        </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container mt-5">
+    <div class="description-heading mt-5">Instructions</div>
+    <div class="row">
+      <div class="col-lg-5 col-md-12 col-sm-12">
+        <div class="video-wrapper">
+            <video src="assets/video/pizza.mp4" poster="assets/images/pizza.svg" class="w-100 mt-4"></video>
+        </div>
+      </div>  
+      <div class="col-lg-7 col-md-12 col-sm-12">
+        <div id="wrapper" class="mt-4">
+            <div id="carousel">
+              <div id="content">
+              <a href="#" class="item-1"><img src="assets/images/step-1.svg"></a>
+              <a href="#" class="item-1"><img src="assets/images/step-2.svg"></a>
+              <a href="#" class="item-1"><img src="assets/images/step-3.svg"></a>
+              <a href="#" class="item-1"><img src="assets/images/step-1.svg"></a>
+              <a href="#" class="item-1"><img src="assets/images/step-2.svg"></a>
+              <a href="#" class="item-1"><img src="assets/images/step-3.svg"></a>
+              <a href="#" class="item-1"><img src="assets/images/step-1.svg"></a>
+              <a href="#" class="item-1"><img src="assets/images/step-2.svg"></a>
+              <a href="#" class="item-1"><img src="assets/images/step-3.svg"></a>
+              <a href="#" class="item-1"><img src="assets/images/step-1.svg"></a>
+              <a href="#" class="item-1"><img src="assets/images/step-2.svg"></a>
+              <a href="#" class="item-1"><img src="assets/images/step-3.svg"></a>
+              <a href="#" class="item-1"><img src="assets/images/step-1.svg"></a>
+              <a href="#" class="item-1"><img src="assets/images/step-2.svg"></a>
+              <a href="#" class="item-1"><img src="assets/images/step-3.svg"></a>
+              <a href="#" class="item-1"><img src="assets/images/step-1.svg"></a>
+              <a href="#" class="item-1"><img src="assets/images/step-2.svg"></a>
+              <a href="#" class="item-1"><img src="assets/images/step-3.svg"></a>
+              </div>
+            </div>
+            <button id="prev">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path fill="none" d="M0 0h24v24H0V0z" />
+                <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
+              </svg>
+            </button>
+            <button id="next">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path fill="none" d="M0 0h24v24H0V0z" />
+                <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
+              </svg>
+            </button>
+          </div> 
+        <div class="step-box mt-2">
+        <div class="step">Step 01</div>
+        <div class="how-txt mt-4">How To: Peel Garlic</div>
+        <div class="step-description mt-3">For incredibly rich, savory, flavor, we're serving these prime ground beef patties (covered with melty fontina cheese) with a luxe topping of mushrooms—glazed in the pan with umami soy</div>
+        </div>  
+      </div>  
+    </div>
+</div>
+<div class="container">
+  <div class="description-heading mt-5">Reviews & Ratings<span style="color: #FAC02C;">&nbsp; (208)</span></div> 
+  <div class="row rating-box mt-3">
+<div class="review-and-rating mt-5">
+<div class="d-flex">
+  <div><img src="assets/images/user.svg" class="mt-2"></div>
+  <div><button class="review-rating-button">ADD RATING & REVIEW</button></div>
+</div>
+<div class="review-txt mt-4">No Any Reviews to See , Add your first Review Here!</div>
+</div>
+  </div> 
+</div>
+<div class="container">
+  <div class="description-heading mt-5">More Recipes</div>
+  <div class="row">
+    <div class="col-lg-3 col-md-6 col-sm-12 col-12" >
+        <div class="food-box mt-5">
+            <img src="assets/images/option.svg" class="float-end" style="cursor: pointer;padding-right: 5%;">
+            <div class="dish-box mt-4">
+                <a href="#"><img src="assets/images/chicken-dish.svg" class="w-100"
+                        style="padding-left: 10%;"></a>
+            </div>
+            <div class="dish-name mt-2">Udon with chicken and garlic peanut dressing</div>
+            <div class="dish-description mt-2">Lorem Ipsum is simply dummy text of the printing and
+                typesetting..... </div>
+            <hr class="mt-4 line">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                    <div class="d-flex" style="padding-left:10%;">
+                        <div>
+                            <img src="assets/images/clock.svg" style="margin-top: 20%;">
+                        </div>
+                        <div class="timing mt-2">&nbsp; 1 Hour</div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                    <img src="assets/images/star.svg">
+                    <img src="assets/images/star.svg">
+                    <img src="assets/images/star.svg">
+                    <img src="assets/images/star.svg">
+                    <img src="assets/images/empty-star.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+        <div class="food-box mt-5">
+            <img src="assets/images/option.svg" class="float-end" style="cursor: pointer;padding-right: 5%;">
+            <div class="dish-box mt-4">
+                <a href="#"><img src="assets/images/chicken-dish.svg" class="w-100"
+                        style="padding-left: 10%;"></a>
+            </div>
+            <div class="dish-name mt-2">Udon with chicken and garlic peanut dressing</div>
+            <div class="dish-description mt-2">Lorem Ipsum is simply dummy text of the printing and
+                typesetting..... </div>
+            <hr class="mt-4 line">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                    <div class="d-flex" style="padding-left:10%;">
+                        <div>
+                            <img src="assets/images/clock.svg" style="margin-top: 20%;">
+                        </div>
+                        <div class="timing mt-2">&nbsp; 1 Hour</div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                    <img src="assets/images/star.svg">
+                    <img src="assets/images/star.svg">
+                    <img src="assets/images/star.svg">
+                    <img src="assets/images/star.svg">
+                    <img src="assets/images/empty-star.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+        <div class="food-box mt-5">
+            <img src="assets/images/option.svg" class="float-end" style="cursor: pointer;padding-right: 5%;">
+            <div class="dish-box mt-4">
+                <a href="#"><img src="assets/images/chicken-dish.svg" class="w-100"
+                        style="padding-left: 10%;"></a>
+            </div>
+            <div class="dish-name mt-2">Udon with chicken and garlic peanut dressing</div>
+            <div class="dish-description mt-2">Lorem Ipsum is simply dummy text of the printing and
+                typesetting..... </div>
+            <hr class="mt-4 line">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                    <div class="d-flex" style="padding-left:10%;">
+                        <div>
+                            <img src="assets/images/clock.svg" style="margin-top: 20%;">
+                        </div>
+                        <div class="timing mt-2">&nbsp; 1 Hour</div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                    <img src="assets/images/star.svg">
+                    <img src="assets/images/star.svg">
+                    <img src="assets/images/star.svg">
+                    <img src="assets/images/star.svg">
+                    <img src="assets/images/empty-star.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+        <div class="food-box mt-5">
+            <img src="assets/images/option.svg" class="float-end" style="cursor: pointer;padding-right: 5%;">
+            <div class="dish-box mt-4">
+                <a href="#"><img src="assets/images/chicken-dish.svg" class="w-100"
+                        style="padding-left: 10%;"></a>
+            </div>
+            <div class="dish-name mt-2">Udon with chicken and garlic peanut dressing</div>
+            <div class="dish-description mt-2">Lorem Ipsum is simply dummy text of the printing and
+                typesetting..... </div>
+            <hr class="mt-4 line">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                    <div class="d-flex" style="padding-left:10%;">
+                        <div>
+                            <img src="assets/images/clock.svg" style="margin-top: 20%;">
+                        </div>
+                        <div class="timing mt-2">&nbsp; 1 Hour</div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                    <img src="assets/images/star.svg">
+                    <img src="assets/images/star.svg">
+                    <img src="assets/images/star.svg">
+                    <img src="assets/images/star.svg">
+                    <img src="assets/images/empty-star.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <a href="#" style="text-decoration: none;"><div class="title mt-5 center">Test<span style="color: #32B768;">Food</span></div></a>
+                <div class="center mt-2">
+                    <a href="#"><img src="assets/images/facebook.svg"></a>
+                    <a href="#"><img src="assets/images/apple.svg"></a>
+                    <a href="#"><img src="assets/images/twitter.svg"></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 col-6">
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-heading mt-5">HOME</div>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-link mt-3">lorem lorem</div>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-link mt-3">lorem lorem</div>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-link mt-3">lorem lorem</div>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-link mt-3">lorem lorem</div>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 col-6">
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-heading mt-5">RECIPES</div>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-link mt-3">lorem lorem</div>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-link mt-3">lorem lorem</div>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-link mt-3">lorem lorem</div>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 col-6">
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-heading mt-5">ABOUT</div>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-link mt-3">lorem lorem</div>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-link mt-3">lorem lorem</div>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 col-6">
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-heading mt-5">PRIVACY</div>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-link mt-3">lorem lorem</div>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-link mt-3">lorem lorem</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background: #32B768;">
+        <div class="copyrights mt-5 center pt-3 pb-3">Copyright 2022 All Right Recieved </div>
+    </div>
+    
+    <script>
+        var videoPlayButton,
+  videoWrapper = document.getElementsByClassName('video-wrapper')[0],
+    video = document.getElementsByTagName('video')[0],
+    videoMethods = {
+        renderVideoPlayButton: function() {
+            if (videoWrapper.contains(video)) {
+        this.formatVideoPlayButton()
+                video.classList.add('has-media-controls-hidden')
+                videoPlayButton = document.getElementsByClassName('video-overlay-play-button')[0]
+                videoPlayButton.addEventListener('click', this.hideVideoPlayButton)
+            }
+        },
+
+        formatVideoPlayButton: function() {
+            videoWrapper.insertAdjacentHTML('beforeend', '\
+                <svg class="video-overlay-play-button" viewBox="0 0 200 200" alt="Play video">\
+                    <circle cx="100" cy="100" r="90" fill="none" stroke-width="15" stroke="#fff"/>\
+                    <polygon points="70, 55 70, 145 145, 100" fill="#fff"/>\
+                </svg>\
+            ')
+        },
+
+        hideVideoPlayButton: function() {
+            video.play()
+            videoPlayButton.classList.add('is-hidden')
+            video.classList.remove('has-media-controls-hidden')
+            video.setAttribute('controls', 'controls')
+        }
+  }
+
+videoMethods.renderVideoPlayButton()
+    </script>
+    
+</body>
+
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container mt-3">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          <a href="#" style="text-decoration: none;"><div class="title navbar-brand center">&nbsp; Test<span style="color: #32B768;">Food</span></div></a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+              <li class="nav-item">
+                <a class="nav-link nav-txt" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-txt active" aria-current="page" href="#">RECIPES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-txt" aria-current="page" href="#">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-txt" aria-current="page" href="#">DOWNLOAD</a>
+              </li>
+            </ul>
+          </div>
+         <div class="d-flex account">
+             <div><img src="assets/images/user.svg" class="user"></div>
+             <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">My Account</button><i class="fa-solid fa-chevron-down"></i>
+                <div id="myDropdown" class="dropdown-content">
+                  <div class="d-flex">
+                      <div>
+                      <label class="greetings">Good Evening</label>
+                      <label class="user-name">Shubham</label>
+                      </div>
+                 <div><img src="assets/images/user.svg" class="mt-2"></div>  
+                  </div>  
+                  <hr style="border: 1px solid #EAF2F9;">
+                  <div class="row">
+                      <div class="col-lg-10 col-md-10 col-sm-10 col-10">
+                        <div class="d-flex">  
+                        <div><img src="assets/images/user-profile.svg" class="icon"></div>    
+                        <a href="#" class="sub-txt">My Profile</a>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                        <i class="fa-solid fa-angle-right mt-3 float-end cursor"></i>
+                      </div>
+                  </div>
+                  <hr style="border: 1px solid #EAF2F9;">
+                  <div class="row">
+                    <div class="col-lg-10 col-md-10 col-sm-10 col-10">
+                      <div class="d-flex">  
+                      <div><img src="assets/images/saved.svg" class="saved-icon"></div>    
+                      <a href="#" class="sub-txt">Saved Items</a>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                      <i class="fa-solid fa-angle-right mt-3 float-end cursor"></i>
+                    </div>
+                </div>
+                <hr style="border: 1px solid #EAF2F9;">
+                <div class="row">
+                    <div class="col-lg-10 col-md-10 col-sm-10 col-10">
+                      <div class="d-flex">  
+                      <div><img src="assets/images/calender.svg" class="icon"></div>    
+                      <a href="#" class="sub-txt">Settings</a>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                      <i class="fa-solid fa-angle-right mt-3 float-end cursor"></i>
+                    </div>
+                </div>
+                <hr style="border: 1px solid #EAF2F9;">
+                <div class="row">
+                    <div class="col-lg-10 col-md-10 col-sm-10 col-10">
+                      <div class="d-flex">  
+                      <div><img src="assets/images/search.svg" class="icon"></div>    
+                      <a href="#" class="sub-txt">Help</a>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                      <i class="fa-solid fa-angle-right mt-3 float-end cursor"></i>
+                    </div>
+                </div>
+                <hr style="border: 1px solid #EAF2F9;">
+                <div class="row">
+                    <div class="col-lg-10 col-md-10 col-sm-10 col-10">
+                      <div class="d-flex">  
+                      <div><img src="assets/images/refer.svg" class="icon"></div>    
+                      <a href="#" class="sub-txt">Refer a Friend</a>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                      <i class="fa-solid fa-angle-right mt-3 float-end cursor"></i>
+                    </div>
+                </div>
+                  <!-- <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a> -->
+                </div>
+              </div>
+         </div>
+        </div>
+      </nav>
+     <div class="container mt-5">
+        <div class="row mt-5">
+            <img src="assets/images/add-receipe.svg" class="add-receipe-img">
+            <div class="add-receipe-descrition mt-5">Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.<br>Lorem Ipsum is simply dummy text</div>
+            <div><a href="#" style="text-decoration: none;"><button class="add-receipe-button mt-5 center" type="button" data-bs-toggle="modal" data-bs-target="#myModal">Add Receipe</button></a></div>
+        </div>
+        </div>
+     <div class="container modal-box">   
+     <!-- The Modal -->
+<div class="modal" id="myModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header img-modal">
+        <div class="add-txt center">Add Recipe</div>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+            <div class="upload-txt">Uploading personal recipes is easy! Add yours to your favorites, share with friends, family, or the Allrecipes community.</div>
+           <hr style="border: 1px solid #E1E6E3;">    
+           <div class="row">
+               <div class="col-lg-6 col-md-12 col-sm-12">
+                 <div class="upload-box">
+                   <div><img src="assets/images/upload-img.svg" class="pt-5 center"></div>
+                  <div>
+                    <label for="files" class="btn upload-link mt-2">Upload Photos</label>
+                    <input id="files" style="visibility:hidden;" type="file">
+                </div>
+                 </div>
+               </div>
+               <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="form-heading">Recipe Title</div>
+                <div><input type="text" placeholder="Enter a recipe" class="modal-form mt-2"></div> 
+                <div class="form-heading mt-4">Description</div>
+                <textarea placeholder="Enter a description" class="modal-form-textarea mt-2"></textarea>
+            </div>
+           </div>  
+           <hr style="border: 1px solid #E1E6E3;">    
+           <div class="ingredients">Ingredients</div>
+           <div class="ingredients-desc mt-2">Enter one ingredient per line. Include the quantity (i.e. cups, tablespoons) and any special preparation (i.e. sifted, softened, chopped). Use optional headers to organize the different parts of the recipe (i.e. Cake, Frosting, Dressing).
+        </div>  
+        <div class="form-heading mt-4">Add Ingredients</div>
+        <textarea placeholder="Enter a description" class="modal-form-ingredients mt-3"></textarea>
+        <div class="row mt-3">
+            <div class="col-lg-4 col-md-8 col-sm-12">
+                <div class="toast show">
+                    <div class="toast-header">
+                      <strong class="me-auto">Breakfast Burrito Recipes</strong>
+                      <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-8 col-sm-12">
+                    <div class="toast show">
+                        <div class="toast-header">
+                          <strong class="me-auto">Breakfast Burrito Recipes</strong>
+                          <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-8 col-sm-12">
+                        <div class="toast show">
+                            <div class="toast-header">
+                              <strong class="me-auto">Breakfast Burrito Recipes</strong>
+                              <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+                            </div>
+                          </div>
+                        </div>
+            </div>
+            <hr style="border: 1px solid #E1E6E3;">    
+            <div class="ingredients">Instructions</div>
+            <div class="ingredients-desc mt-2">Explain how to make your recipe, including oven temperatures, baking or cooking times, and pan sizes, etc. Use optional headers to organize the different parts of the recipe (i.e. Prep, Bake, Decorate).
+         </div>  
+         <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <div class="upload-box mt-4">
+                <div><img src="assets/images/upload-img.svg" class="pt-5 center"></div>
+               <div>
+                 <label for="files" class="btn upload-link mt-2">Upload Photos</label>
+                 <input id="files" style="visibility:hidden;" type="file">
+             </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12"> 
+             <div class="form-heading mt-4">Step 01</div>
+             <textarea placeholder="Enter a description" class="modal-form-step mt-2"></textarea>
+             <button class="d-flex add-steps-button mt-2">
+              <div><img src="assets/images/plus.svg"></div>
+              <div class="add-steps mt-1">Add More Steps</div>
+            </button>
+         </div>
+        </div>  
+        <hr style="border: 1px solid #E1E6E3;"> 
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="ingredients">Cook Time</div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12"> 
+         <div class="d-flex float-end">
+           <div class="d-flex">
+            <select class="hr-box">
+              <option>1 Hr</option>
+              <option>2 Hr</option>
+              <option>3 Hr</option>
+              <option>4 Hr</option>
+            </select>
+            <div class="colon mt-3">:</div>
+           </div>
+           <div>
+            <select class="min-box">
+              <option>30 min</option>
+              <option>30 min</option>
+              <option>30 min</option>
+              <option>30 min</option>
+            </select>
+           </div>
+         </div>
+       </div>
+      </div> 
+      <hr style="border: 1px solid #E1E6E3;"> 
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="ingredients">Make this recipe public?</div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12"> 
+       <div class="row">
+         <div class="col-lg-6  col-md-6 col-sm-6 col-6">
+          <div class="radio float-end">
+            <input id="radio-1" name="radio" type="radio" checked>
+            <label for="radio-1" class="radio-label">Public Recipes</label>
+          </div>
+         </div>
+         <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+          <div class="radio">
+            <input id="radio-2" name="radio" type="radio">
+            <label  for="radio-2" class="radio-label">Personal Recipes</label>
+          </div>
+         </div>
+       </div>
+     </div>
+    </div> 
+        </div>
+        <!-- Modal footer -->
+        <div class="modal-footer">
+        <div class="d-flex">
+          <div><button type="button" class="cancel" data-bs-dismiss="modal">Close</button></div>
+          <div><button type="button" class="submit-recipe">Submit Recipe</button></div>
+        </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+<div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <a href="#" style="text-decoration: none;">
+                    <div class="title mt-5 center">Test<span style="color: #32B768;">Food</span></div>
+                </a>
+                <div class="center mt-2">
+                    <a href="#"><img src="assets/images/facebook.svg"></a>
+                    <a href="#"><img src="assets/images/apple.svg"></a>
+                    <a href="#"><img src="assets/images/twitter.svg"></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 col-6">
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-heading mt-5">HOME</div>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-link mt-3">lorem lorem</div>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-link mt-3">lorem lorem</div>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-link mt-3">lorem lorem</div>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-link mt-3">lorem lorem</div>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 col-6">
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-heading mt-5">RECIPES</div>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-link mt-3">lorem lorem</div>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-link mt-3">lorem lorem</div>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-link mt-3">lorem lorem</div>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 col-6">
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-heading mt-5">ABOUT</div>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-link mt-3">lorem lorem</div>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-link mt-3">lorem lorem</div>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 col-6">
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-heading mt-5">PRIVACY</div>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-link mt-3">lorem lorem</div>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-link mt-3">lorem lorem</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background: #32B768;">
+        <div class="copyrights mt-5 center pt-3 pb-3">Copyright 2022 All Right Recieved </div>
+    </div>
+    
+</body>
+
+</html>

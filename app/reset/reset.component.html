@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 bg-color">
+<div class="discover pt-1">Discover More Recipies<br>& More Cooks</div>
+<div class="discover-describe mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas aut ab voluptatibus harum dolorum iusto.</div>
+<div><img src="./assets/images/Group.svg" class="discover-img mt-5"></div>            
+</div>
+
+<form [formGroup]="resetform" (ngSubmit)="rsSubmit()" >
+            <div class="col-lg-6 col-md-12 col-sm-12 bg-gray">
+                <div class="details-box" style="margin-top: 25% !important;">
+
+                    <div class="welcome pt-4">Reset Password</div>
+                    <div class="welcome-describe pt-2">Plase check your email address</div>
+                  
+                    <div class="form-group">
+                
+                    <div class="required-field pt-5">Enter a code*</div>
+                    <div><input type="text" formControlName="code" class="form-control" 
+                        class="req-details-box mt-1" placeholder="Enter your code"></div>
+                        <div *ngIf="resetform.controls['code'].invalid && 
+                         (resetform.controls['code'].dirty || resetform.controls['code'].touched)">
+                            <div *ngIf="resetform.controls['code'].errors.required"></div>
+                            <small class="text-danger pt-5">code is required</small>
+                        </div>
+                    
+
+                    <a href="">
+                        <button (click)="resetbtn()" [disabled]="resetform.invalid" 
+                        type="button" class="join-button mt-4">Join</button></a>
+                        <div class="sign-in mt-4">Back to <a href="signin" class="link-sign">Sign in</a></div>
+
+                        </div>
+                    </div>
+            </div>
+        </form>
+     
+        </div>
+    </div>
+
+</body>
+</html>

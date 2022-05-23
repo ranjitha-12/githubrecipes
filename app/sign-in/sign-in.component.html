@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 bg-color">
+<div class="discover pt-1">Discover More Recipies<br>& More Cooks</div>
+<div class="discover-describe mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas aut ab voluptatibus harum dolorum iusto.</div>
+<div><img src="./assets/images/Group.svg" class="discover-img mt-5"></div>      
+</div>
+
+<form [formGroup]="signinform">
+
+            <div class="col-lg-6 col-md-12 col-sm-12 bg-gray">
+                <div class="details-box" style="margin-top: 25% !important;">
+                    <div class="welcome pt-4">Sign in</div>
+                    <div class="welcome-describe pt-2">Please fill out your profile information</div>
+                    
+                  <div class="form-group">
+
+                    <div class="required-field pt-4">E-mail Address*</div>
+                    <div><input type="email" class="form-control" class="req-details-box mt-1"
+                     formControlName="email" placeholder="Enter your email"/></div>
+                       <div *ngIf="signinform.controls['email'].dirty && 
+                         signinform.hasError('required','email')">
+                            <small class="text-danger pt-5">email is required</small>
+                        </div>
+                    
+                  
+                    <div class="required-field pt-3">Password*</div>
+                    <div><input type="password" class="form-control" class="req-details-box mt-1" 
+                        formControlName="password" placeholder="Enter your password"/></div>
+                        <div *ngIf="signinform.controls['password'].dirty && 
+                        signinform.hasError('required','password')">
+                           <small class="text-danger pt-5">password is required</small>
+                       </div>
+                                      
+                         
+                    <a href="forgot"  class="forgot-link float-end mt-4">Forget password ?</a>
+
+                    <a href="">
+                        <button (click)="signinUser()" [disabled]="signinform.invalid" 
+                        type="button" class="join-button mt-3">
+                        Join</button></a>
+                  
+
+                    <div class="sign-in mt-4">Need a account? 
+                        <a href="signup" class="link-sign">Join</a></div>
+
+                 </div>
+                   
+                </div>
+
+            </div>
+</form>
+      </div>     
+    </div>
+
+</body>
+</html>

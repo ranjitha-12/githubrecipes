@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container mt-3">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          <a href="#" style="text-decoration: none;"><div class="title navbar-brand center">&nbsp; Test<span style="color: #32B768;">Food</span></div></a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+              <li class="nav-item">
+                <a class="nav-link nav-txt" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-txt" aria-current="page" href="#">RECIPES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-txt" aria-current="page" href="#">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-txt" aria-current="page" href="#">DOWNLOAD</a>
+              </li>
+            </ul>
+          </div>
+         <div class="d-flex account">
+             <div><img src="assets/images/user.svg" class="user"></div>
+             <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">My Account</button><i class="fa-solid fa-chevron-down"></i>
+                <div id="myDropdown" class="dropdown-content">
+                  <div class="d-flex">
+                      <div>
+                      <label class="greetings">Good Evening</label>
+                      <label class="user-name">Shubham</label>
+                      </div>
+                 <div><img src="assets/images/user.svg" class="mt-2"></div>  
+                  </div>  
+                  <hr style="border: 1px solid #EAF2F9;">
+                  <div class="row">
+                      <div class="col-lg-10 col-md-10 col-sm-10 col-10">
+                        <div class="d-flex">  
+                        <div><img src="assets/images/user-profile.svg" class="icon"></div>    
+                        <a href="#" class="sub-txt">My Profile</a>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                        <i class="fa-solid fa-angle-right mt-3 float-end cursor"></i>
+                      </div>
+                  </div>
+                  <hr style="border: 1px solid #EAF2F9;">
+                  <div class="row">
+                    <div class="col-lg-10 col-md-10 col-sm-10 col-10">
+                      <div class="d-flex">  
+                      <div><img src="assets/images/saved.svg" class="saved-icon"></div>    
+                      <a href="#" class="sub-txt">Saved Items</a>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                      <i class="fa-solid fa-angle-right mt-3 float-end cursor"></i>
+                    </div>
+                </div>
+                <hr style="border: 1px solid #EAF2F9;">
+                <div class="row">
+                    <div class="col-lg-10 col-md-10 col-sm-10 col-10">
+                      <div class="d-flex">  
+                      <div><img src="assets/images/calender.svg" class="icon"></div>    
+                      <a href="#" class="sub-txt">Settings</a>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                      <i class="fa-solid fa-angle-right mt-3 float-end cursor"></i>
+                    </div>
+                </div>
+                <hr style="border: 1px solid #EAF2F9;">
+                <div class="row">
+                    <div class="col-lg-10 col-md-10 col-sm-10 col-10">
+                      <div class="d-flex">  
+                      <div><img src="assets/images/search.svg" class="icon"></div>    
+                      <a href="#" class="sub-txt">Help</a>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                      <i class="fa-solid fa-angle-right mt-3 float-end cursor"></i>
+                    </div>
+                </div>
+                <hr style="border: 1px solid #EAF2F9;">
+                <div class="row">
+                    <div class="col-lg-10 col-md-10 col-sm-10 col-10">
+                      <div class="d-flex">  
+                      <div><img src="assets/images/refer.svg" class="icon"></div>    
+                      <a href="#" class="sub-txt">Refer a Friend</a>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                      <i class="fa-solid fa-angle-right mt-3 float-end cursor"></i>
+                    </div>
+                </div>
+                  <!-- <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a> -->
+                </div>
+              </div>
+         </div>
+        </div>
+      </nav>
+    <div class="container-fluid mt-2" style="background: linear-gradient(180deg, #F0F3F1 0%, rgba(240, 243, 241, 0) 100%);">
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                <img src="assets/images/plate.svg" class="plate">
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-8">
+              <div class="d-flex" style="position: relative;">
+             <input type="text" placeholder="search 2M+ recipes" class="search-box center mt-5">
+             <img src="assets/images/search.svg" class="search-icon">
+             <button class="d-flex filter-button">
+                 <div><img src="assets/images/filter.svg" class="filter-img"></div>
+                 <div class="filter">Filter</div>
+             </button>
+             </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                <img src="assets/images/blueberry.svg" class="float-end w-100 mb-5">
+            </div>
+        </div>
+        <div class="fair">What are your fair with?</div>
+        <div class="experience mt-2">PERSONALIZE YOUR EXPERIENCE</div>
+        <div class="container mt-5">
+        <div id="wrapper">
+            <div id="carousel">
+              <div id="content">
+              <a href="#" class="item"><img src="assets/images/american.svg"></a>
+              <a href="#" class="item"><img src="assets/images/italy.svg"></a>
+              <a href="#" class="item"><img src="assets/images/asian.svg"></a>
+              <a href="#" class="item"><img src="assets/images/mexican.svg"></a>
+              <a href="#" class="item"><img src="assets/images/soul.svg"></a>
+              <a href="#" class="item"><img src="assets/images/french.svg"></a>
+              <a href="#" class="item"><img src="assets/images/american.svg"></a>
+              <a href="#" class="item"><img src="assets/images/italy.svg"></a>
+              <a href="#" class="item"><img src="assets/images/asian.svg"></a>
+              <a href="#" class="item"><img src="assets/images/mexican.svg"></a>
+              <a href="#" class="item"><img src="assets/images/soul.svg"></a>
+              <a href="#" class="item"><img src="assets/images/french.svg"></a>
+              <a href="#" class="item"><img src="assets/images/american.svg"></a>
+              <a href="#" class="item"><img src="assets/images/italy.svg"></a>
+              <a href="#" class="item"><img src="assets/images/asian.svg"></a>
+              <a href="#" class="item"><img src="assets/images/mexican.svg"></a>
+              <a href="#" class="item"><img src="assets/images/soul.svg"></a>
+              <a href="#" class="item"><img src="assets/images/french.svg"></a>
+              </div>
+            </div>
+            <button id="prev">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path fill="none" d="M0 0h24v24H0V0z" />
+                <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
+              </svg>
+            </button>
+            <button id="next">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path fill="none" d="M0 0h24v24H0V0z" />
+                <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
+              </svg>
+            </button>
+          </div>
+          </div>
+    </div>
+    <div class="container">
+        <div class="fair mt-5">Just For You</div>
+        <div class="experience mt-2">PERSONALIZE YOUR EXPERIENCE</div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                <div class="food-box mt-5">
+                    <div class="dish-box mt-4" style="position: relative;">
+                        <a href="#"><img src="assets/images/chicken-dish.svg" class="w-100"
+                                style="padding-left: 15%;"></a>
+                        <div class="favourite-box">
+                            <img src="assets/images/heart.svg" class="center mt-2 cursor">
+                        </div>
+                    </div>
+                    <div class="dish-name mt-3">Udon with chicken and garlic peanut dressing</div>
+                    <div class="dish-description mt-2">Lorem Ipsum is simply dummy text of the printing
+                        and
+                        typesetting..... </div>
+                    <hr class="mt-4 line">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="d-flex" style="padding-left:10%;">
+                                <div>
+                                    <img src="assets/images/clock.svg" style="margin-top: 20%;">
+                                </div>
+                                <div class="timing mt-2">&nbsp; 1 Hour</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="center">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/empty-star.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="publish-box center mt-3">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                                <div><img src="assets/images/publish-img.svg" class="center"></div>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-10">
+                                <div class="published-data">Published by <a href="#"
+                                        class="publisher-name">Seron</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                <div class="food-box mt-5">
+                    <div class="dish-box mt-4" style="position: relative;">
+                        <a href="#"><img src="assets/images/chicken-dish.svg" class="w-100"
+                                style="padding-left: 15%;"></a>
+                        <div class="favourite-box">
+                            <img src="assets/images/heart.svg" class="center mt-2 cursor">
+                        </div>
+                    </div>
+                    <div class="dish-name mt-3">Udon with chicken and garlic peanut dressing</div>
+                    <div class="dish-description mt-2">Lorem Ipsum is simply dummy text of the printing
+                        and
+                        typesetting..... </div>
+                    <hr class="mt-4 line">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="d-flex" style="padding-left:10%;">
+                                <div>
+                                    <img src="assets/images/clock.svg" style="margin-top: 20%;">
+                                </div>
+                                <div class="timing mt-2">&nbsp; 1 Hour</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="center">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/empty-star.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="publish-box center mt-3">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                                <div><img src="assets/images/publish-img.svg" class="center"></div>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-10">
+                                <div class="published-data">Published by <a href="#"
+                                        class="publisher-name">Seron</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                <div class="food-box mt-5">
+                    <div class="dish-box mt-4" style="position: relative;">
+                        <a href="#"><img src="assets/images/chicken-dish.svg" class="w-100"
+                                style="padding-left: 15%;"></a>
+                        <div class="favourite-box">
+                            <img src="assets/images/heart.svg" class="center mt-2 cursor">
+                        </div>
+                    </div>
+                    <div class="dish-name mt-3">Udon with chicken and garlic peanut dressing</div>
+                    <div class="dish-description mt-2">Lorem Ipsum is simply dummy text of the printing
+                        and
+                        typesetting..... </div>
+                    <hr class="mt-4 line">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="d-flex" style="padding-left:10%;">
+                                <div>
+                                    <img src="assets/images/clock.svg" style="margin-top: 20%;">
+                                </div>
+                                <div class="timing mt-2">&nbsp; 1 Hour</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="center">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/empty-star.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="publish-box center mt-3">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                                <div><img src="assets/images/publish-img.svg" class="center"></div>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-10">
+                                <div class="published-data">Published by <a href="#"
+                                        class="publisher-name">Seron</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                <div class="food-box mt-5">
+                    <div class="dish-box mt-4" style="position: relative;">
+                        <a href="#"><img src="assets/images/chicken-dish.svg" class="w-100"
+                                style="padding-left: 15%;"></a>
+                        <div class="favourite-box">
+                            <img src="assets/images/heart.svg" class="center mt-2 cursor">
+                        </div>
+                    </div>
+                    <div class="dish-name mt-3">Udon with chicken and garlic peanut dressing</div>
+                    <div class="dish-description mt-2">Lorem Ipsum is simply dummy text of the printing
+                        and
+                        typesetting..... </div>
+                    <hr class="mt-4 line">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="d-flex" style="padding-left:10%;">
+                                <div>
+                                    <img src="assets/images/clock.svg" style="margin-top: 20%;">
+                                </div>
+                                <div class="timing mt-2">&nbsp; 1 Hour</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="center">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/empty-star.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="publish-box center mt-3">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                                <div><img src="assets/images/publish-img.svg" class="center"></div>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-10">
+                                <div class="published-data">Published by <a href="#"
+                                        class="publisher-name">Seron</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                <div class="food-box mt-5">
+                    <div class="dish-box mt-4" style="position: relative;">
+                        <a href="#"><img src="assets/images/chicken-dish.svg" class="w-100"
+                                style="padding-left: 15%;"></a>
+                        <div class="favourite-box">
+                            <img src="assets/images/heart.svg" class="center mt-2 cursor">
+                        </div>
+                    </div>
+                    <div class="dish-name mt-3">Udon with chicken and garlic peanut dressing</div>
+                    <div class="dish-description mt-2">Lorem Ipsum is simply dummy text of the printing
+                        and
+                        typesetting..... </div>
+                    <hr class="mt-4 line">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="d-flex" style="padding-left:10%;">
+                                <div>
+                                    <img src="assets/images/clock.svg" style="margin-top: 20%;">
+                                </div>
+                                <div class="timing mt-2">&nbsp; 1 Hour</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="center">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/empty-star.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="publish-box center mt-3">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                                <div><img src="assets/images/publish-img.svg" class="center"></div>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-10">
+                                <div class="published-data">Published by <a href="#"
+                                        class="publisher-name">Seron</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                <div class="food-box mt-5">
+                    <div class="dish-box mt-4" style="position: relative;">
+                        <a href="#"><img src="assets/images/chicken-dish.svg" class="w-100"
+                                style="padding-left: 15%;"></a>
+                        <div class="favourite-box">
+                            <img src="assets/images/heart.svg" class="center mt-2 cursor">
+                        </div>
+                    </div>
+                    <div class="dish-name mt-3">Udon with chicken and garlic peanut dressing</div>
+                    <div class="dish-description mt-2">Lorem Ipsum is simply dummy text of the printing
+                        and
+                        typesetting..... </div>
+                    <hr class="mt-4 line">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="d-flex" style="padding-left:10%;">
+                                <div>
+                                    <img src="assets/images/clock.svg" style="margin-top: 20%;">
+                                </div>
+                                <div class="timing mt-2">&nbsp; 1 Hour</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="center">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/empty-star.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="publish-box center mt-3">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                                <div><img src="assets/images/publish-img.svg" class="center"></div>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-10">
+                                <div class="published-data">Published by <a href="#"
+                                        class="publisher-name">Seron</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                <div class="food-box mt-5">
+                    <div class="dish-box mt-4" style="position: relative;">
+                        <a href="#"><img src="assets/images/chicken-dish.svg" class="w-100"
+                                style="padding-left: 15%;"></a>
+                        <div class="favourite-box">
+                            <img src="assets/images/heart.svg" class="center mt-2 cursor">
+                        </div>
+                    </div>
+                    <div class="dish-name mt-3">Udon with chicken and garlic peanut dressing</div>
+                    <div class="dish-description mt-2">Lorem Ipsum is simply dummy text of the printing
+                        and
+                        typesetting..... </div>
+                    <hr class="mt-4 line">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="d-flex" style="padding-left:10%;">
+                                <div>
+                                    <img src="assets/images/clock.svg" style="margin-top: 20%;">
+                                </div>
+                                <div class="timing mt-2">&nbsp; 1 Hour</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="center">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/empty-star.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="publish-box center mt-3">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                                <div><img src="assets/images/publish-img.svg" class="center"></div>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-10">
+                                <div class="published-data">Published by <a href="#"
+                                        class="publisher-name">Seron</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                <div class="food-box mt-5">
+                    <div class="dish-box mt-4" style="position: relative;">
+                        <a href="#"><img src="assets/images/chicken-dish.svg" class="w-100"
+                                style="padding-left: 15%;"></a>
+                        <div class="favourite-box">
+                            <img src="assets/images/heart.svg" class="center mt-2 cursor">
+                        </div>
+                    </div>
+                    <div class="dish-name mt-3">Udon with chicken and garlic peanut dressing</div>
+                    <div class="dish-description mt-2">Lorem Ipsum is simply dummy text of the printing
+                        and
+                        typesetting..... </div>
+                    <hr class="mt-4 line">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="d-flex" style="padding-left:10%;">
+                                <div>
+                                    <img src="assets/images/clock.svg" style="margin-top: 20%;">
+                                </div>
+                                <div class="timing mt-2">&nbsp; 1 Hour</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="center">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/empty-star.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="publish-box center mt-3">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                                <div><img src="assets/images/publish-img.svg" class="center"></div>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-10">
+                                <div class="published-data">Published by <a href="#"
+                                        class="publisher-name">Seron</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                <div class="food-box mt-5">
+                    <div class="dish-box mt-4" style="position: relative;">
+                        <a href="#"><img src="assets/images/chicken-dish.svg" class="w-100"
+                                style="padding-left: 15%;"></a>
+                        <div class="favourite-box">
+                            <img src="assets/images/heart.svg" class="center mt-2 cursor">
+                        </div>
+                    </div>
+                    <div class="dish-name mt-3">Udon with chicken and garlic peanut dressing</div>
+                    <div class="dish-description mt-2">Lorem Ipsum is simply dummy text of the printing
+                        and
+                        typesetting..... </div>
+                    <hr class="mt-4 line">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="d-flex" style="padding-left:10%;">
+                                <div>
+                                    <img src="assets/images/clock.svg" style="margin-top: 20%;">
+                                </div>
+                                <div class="timing mt-2">&nbsp; 1 Hour</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="center">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/empty-star.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="publish-box center mt-3">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                                <div><img src="assets/images/publish-img.svg" class="center"></div>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-10">
+                                <div class="published-data">Published by <a href="#"
+                                        class="publisher-name">Seron</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                <div class="food-box mt-5">
+                    <div class="dish-box mt-4" style="position: relative;">
+                        <a href="#"><img src="assets/images/chicken-dish.svg" class="w-100"
+                                style="padding-left: 15%;"></a>
+                        <div class="favourite-box">
+                            <img src="assets/images/heart.svg" class="center mt-2 cursor">
+                        </div>
+                    </div>
+                    <div class="dish-name mt-3">Udon with chicken and garlic peanut dressing</div>
+                    <div class="dish-description mt-2">Lorem Ipsum is simply dummy text of the printing
+                        and
+                        typesetting..... </div>
+                    <hr class="mt-4 line">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="d-flex" style="padding-left:10%;">
+                                <div>
+                                    <img src="assets/images/clock.svg" style="margin-top: 20%;">
+                                </div>
+                                <div class="timing mt-2">&nbsp; 1 Hour</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="center">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/empty-star.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="publish-box center mt-3">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                                <div><img src="assets/images/publish-img.svg" class="center"></div>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-10">
+                                <div class="published-data">Published by <a href="#"
+                                        class="publisher-name">Seron</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                <div class="food-box mt-5">
+                    <div class="dish-box mt-4" style="position: relative;">
+                        <a href="#"><img src="assets/images/chicken-dish.svg" class="w-100"
+                                style="padding-left: 15%;"></a>
+                        <div class="favourite-box">
+                            <img src="assets/images/heart.svg" class="center mt-2 cursor">
+                        </div>
+                    </div>
+                    <div class="dish-name mt-3">Udon with chicken and garlic peanut dressing</div>
+                    <div class="dish-description mt-2">Lorem Ipsum is simply dummy text of the printing
+                        and
+                        typesetting..... </div>
+                    <hr class="mt-4 line">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="d-flex" style="padding-left:10%;">
+                                <div>
+                                    <img src="assets/images/clock.svg" style="margin-top: 20%;">
+                                </div>
+                                <div class="timing mt-2">&nbsp; 1 Hour</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="center">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/empty-star.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="publish-box center mt-3">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                                <div><img src="assets/images/publish-img.svg" class="center"></div>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-10">
+                                <div class="published-data">Published by <a href="#"
+                                        class="publisher-name">Seron</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                <div class="food-box mt-5">
+                    <div class="dish-box mt-4" style="position: relative;">
+                        <a href="#"><img src="assets/images/chicken-dish.svg" class="w-100"
+                                style="padding-left: 15%;"></a>
+                        <div class="favourite-box">
+                            <img src="assets/images/heart.svg" class="center mt-2 cursor">
+                        </div>
+                    </div>
+                    <div class="dish-name mt-3">Udon with chicken and garlic peanut dressing</div>
+                    <div class="dish-description mt-2">Lorem Ipsum is simply dummy text of the printing
+                        and
+                        typesetting..... </div>
+                    <hr class="mt-4 line">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="d-flex" style="padding-left:10%;">
+                                <div>
+                                    <img src="assets/images/clock.svg" style="margin-top: 20%;">
+                                </div>
+                                <div class="timing mt-2">&nbsp; 1 Hour</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="center">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/star.svg">
+                                <img src="assets/images/empty-star.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="publish-box center mt-3">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                                <div><img src="assets/images/publish-img.svg" class="center"></div>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-10">
+                                <div class="published-data">Published by <a href="#"
+                                        class="publisher-name">Seron</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <a href="#" style="text-decoration: none;"><div class="title mt-5 center">Test<span style="color: #32B768;">Food</span></div></a>
+                <div class="center mt-2">
+                    <a href="#"><img src="assets/images/facebook.svg"></a>
+                    <a href="#"><img src="assets/images/apple.svg"></a>
+                    <a href="#"><img src="assets/images/twitter.svg"></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 col-6">
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-heading mt-5">HOME</div>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-link mt-3">lorem lorem</div>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-link mt-3">lorem lorem</div>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-link mt-3">lorem lorem</div>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-link mt-3">lorem lorem</div>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 col-6">
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-heading mt-5">RECIPES</div>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-link mt-3">lorem lorem</div>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-link mt-3">lorem lorem</div>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-link mt-3">lorem lorem</div>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 col-6">
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-heading mt-5">ABOUT</div>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-link mt-3">lorem lorem</div>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-link mt-3">lorem lorem</div>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 col-6">
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-heading mt-5">PRIVACY</div>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-link mt-3">lorem lorem</div>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <div class="footer-link mt-3">lorem lorem</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background: #32B768;">
+        <div class="copyrights mt-5 center pt-3 pb-3">Copyright 2022 All Right Recieved </div>
+    </div>
+    
+</body>
+
+</html>
